@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
     "lint": "eslint"
   },
   "dependencies": {
@@ -13,7 +13,6 @@
     "@neondatabase/serverless": "^1.1.0",
     "@vercel/blob": "^2.8.0",
     "bcryptjs": "^3.0.3",
-    "canvas": "^3.2.3",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.3",
     "jose": "^6.2.12",
